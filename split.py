@@ -7,7 +7,7 @@ def random_subset(*args, size=.5):
 
 
 def split(X, y, cv_percentage=.2):
-    # Gives you back train, test, cross-validation
+    # Gives you back train, test, cross-validation (in the future)
     cv_indexes = np.random.random_integers(0, X.shape[0] - 1, int(X.shape[0] * cv_percentage))
     X_cv, y_cv = X[cv_indexes], y[cv_indexes]
 
